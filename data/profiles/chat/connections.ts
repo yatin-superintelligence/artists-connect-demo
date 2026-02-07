@@ -17,7 +17,7 @@ export const CHAT_CONNECTIONS: Connection[] = [
       interests: ['Travel', 'Fashion', 'Photography', 'Cocktails', 'Luxury travel', 'Art', 'Music'],
       lastSeen: 'Recently'
     },
-    lastMessage: "Your aesthetic is exactly what I've been looking for. When are you free?",
+    lastMessage: "Your aesthetic is exactly what I've been looking for. Do you have a digital portfolio?",
     lastMessageTime: '4:20 PM',
     unreadCount: 1
   },
@@ -37,7 +37,7 @@ export const CHAT_CONNECTIONS: Connection[] = [
       interests: ['Architecture', 'Coffee', 'Product design', 'Travel', 'Collecting', 'Music', 'Sculpting'],
       lastSeen: 'Recently'
     },
-    lastMessage: "I'm heading to the site tomorrow. Care to join?",
+    lastMessage: "I'll upload some photos of the site tomorrow. Want to see?",
     lastMessageTime: '4:15 PM',
     unreadCount: 1
   },
@@ -59,7 +59,7 @@ export const CHAT_CONNECTIONS: Connection[] = [
       hiddenBio: 'I have a collection of antique maps and a love for storm chasing.',
       lastSeen: '1D'
     },
-    lastMessage: "Sundays work for me. I'll bring the charcoal.",
+    lastMessage: "Let me know how it goes. I'd love to see the result.",
     lastMessageTime: '2:45 PM',
     unreadCount: 0
   },
@@ -81,7 +81,7 @@ export const CHAT_CONNECTIONS: Connection[] = [
       hiddenBio: 'I once lived in a monastery for six months just to find silence.',
       lastSeen: '1D'
     },
-    lastMessage: "I'll send you the details. I think you'd appreciate the silence between the words.",
+    lastMessage: "I'll send you the link. I think you'd appreciate the silence between the words.",
     lastMessageTime: '1:20 PM',
     unreadCount: 1
   },
@@ -189,7 +189,7 @@ export const CHAT_CONNECTIONS: Connection[] = [
       hiddenBio: 'I am secretly a grandmaster at Tetris.',
       lastSeen: '1W'
     },
-    lastMessage: "Sold. I'll buy.",
+    lastMessage: "Sold. I'll take notes.",
     lastMessageTime: '8:45 AM',
     unreadCount: 0
   },

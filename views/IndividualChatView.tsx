@@ -52,7 +52,7 @@ const EMOJI_DATA = {
 
 const EMOJI_CATEGORIES = Object.keys(EMOJI_DATA);
 
-const EMOJI_SET = ['❤️', '😂', '😍', '🔥', '😮', '😢', '👍', '👏', '💋', '🥵', '😈', '💦', '😏', '🙈', '💯', '✨', '🤤', '😘'];
+const EMOJI_SET = ['❤️', '😂', '😍', '🔥', '😮', '😢', '👍', '👏', '🥵', '😈', '😏', '🙈', '💯', '✨', '🤤', '😘'];
 
 const IndividualChatView: React.FC<IndividualChatViewProps> = ({
   connection,
@@ -1410,7 +1410,7 @@ const MessageItem: React.FC<{
                 }
                 lastTap.current = now;
                 if (isImageMessage) {
-                  onOpenMedia('https://images.pexels.com/photos/3755556/pexels-photo-3755556.jpeg');
+                  onOpenMedia('https://images.pexels.com/photos/763135/pexels-photo-763135.jpeg');
                 } else {
                   onLongPress();
                 }

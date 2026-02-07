@@ -12,8 +12,8 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'k8', text: "Contrast is my favorite tool.", sender: 'me', timestamp: Date.now() - 3600000 * 1.8 },
     { id: 'k9', text: "We should experiment with that. I have a studio space downtown.", sender: 'them', timestamp: Date.now() - 3600000 * 1.7 },
     { id: 'k10', text: "I'd be open to that. What kind of project?", sender: 'me', timestamp: Date.now() - 3600000 * 1.6 },
-    { id: 'k11', text: "Something raw. Just light and shadow. No distractions.", sender: 'them', timestamp: Date.now() - 3600000 * 1.5 },
-    { id: 'k12', text: " sounds intense. I like it.", sender: 'me', timestamp: Date.now() - 3600000 * 1.4 },
+    { id: 'k11', text: "Something cinematic. Just light and shadow. Pure focused work.", sender: 'them', timestamp: Date.now() - 3600000 * 1.5 },
+    { id: 'k12', text: "Sounds intense. I like it.", sender: 'me', timestamp: Date.now() - 3600000 * 1.4 },
     { id: 'k13', text: "It will be. I work fast, by the way.", sender: 'them', timestamp: Date.now() - 3600000 * 1.3 },
     { id: 'k14', text: "I can keep up.", sender: 'me', timestamp: Date.now() - 3600000 * 1.2 },
     { id: 'k15', text: "Good. Leo might drop by too. He likes your structure.", sender: 'them', timestamp: Date.now() - 3600000 * 1.1 },
@@ -21,7 +21,7 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'k17', text: "It usually is. We balance each other out.", sender: 'them', timestamp: Date.now() - 3600000 * 0.9 },
     { id: 'k18', text: "I can see that. One builds, one lights.", sender: 'me', timestamp: Date.now() - 3600000 * 0.8 },
     { id: 'k19', text: "Exactly. And you... you capture.", sender: 'them', timestamp: Date.now() - 3600000 * 0.7 },
-    { id: 'k20', text: "Your aesthetic is exactly what I've been looking for. When are you free?", sender: 'them', timestamp: Date.now() - 3600000 * 0.5 }
+    { id: 'k20', text: "Your aesthetic is exactly what I've been looking for. Do you have a digital portfolio?", sender: 'them', timestamp: Date.now() - 3600000 * 0.5 }
   ],
   'c8': [ // Leo - Architect (Shared Philosophy - UNREAD)
     { id: 'l1', text: "It's rare to find someone who appreciates the skeleton of things.", sender: 'them', timestamp: Date.now() - 3600000 * 2.5 },
@@ -42,8 +42,8 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'l16', text: "Fresh eyes are always good.", sender: 'me', timestamp: Date.now() - 3600000 * 1.0 },
     { id: 'l17', text: "Especially eyes that understand weight and balance.", sender: 'them', timestamp: Date.now() - 3600000 * 0.9 },
     { id: 'l18', text: "I'd love to see the blueprints sometime.", sender: 'me', timestamp: Date.now() - 3600000 * 0.8 },
-    { id: 'l19', text: "We seem to value the same structures. I can show you more than blueprints.", sender: 'them', timestamp: Date.now() - 3600000 * 0.7 },
-    { id: 'l20', text: "I'm heading to the site tomorrow. Care to join?", sender: 'them', timestamp: Date.now() - 3600000 * 0.5 }
+    { id: 'l19', text: "We seem to value the same structures. I can show you the 3D renders.", sender: 'them', timestamp: Date.now() - 3600000 * 0.7 },
+    { id: 'l20', text: "I'll upload some photos of the site tomorrow. Want to see?", sender: 'them', timestamp: Date.now() - 3600000 * 0.5 }
   ],
   'c1': [ // Fahad - Draughtsman (Technique Inquiry - READ/REPLIED)
     { id: 'f1', text: "That sketch you posted... is that charcoal or graphite?", sender: 'them', timestamp: Date.now() - 86400000 * 2.5 },
@@ -51,7 +51,7 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'f3', text: "I knew it. The blacks are too deep for graphite.", sender: 'them', timestamp: Date.now() - 86400000 * 2.3 },
     { id: 'f4', text: "You have a good eye for materials.", sender: 'me', timestamp: Date.now() - 86400000 * 2.2 },
     { id: 'f5', text: "I draw a lot myself. Mostly architectural studies.", sender: 'them', timestamp: Date.now() - 86400000 * 2.1 },
-    { id: 'f6', text: "I saw on your profile. Your line work is incredibly precise.", sender: 'me', timestamp: Date.now() - 86400000 * 2.0 },
+    { id: 'f6', text: "I'd love to see some. I bet your line work is incredibly precise.", sender: 'me', timestamp: Date.now() - 86400000 * 2.0 },
     { id: 'f7', text: "Precision is a habit. Sometimes I wish I could be looser.", sender: 'them', timestamp: Date.now() - 86400000 * 1.9 },
     { id: 'f8', text: "Loose is scary. You have to lose control.", sender: 'me', timestamp: Date.now() - 86400000 * 1.8 },
     { id: 'f9', text: "Exactly. That's why I like your work. It feels free.", sender: 'them', timestamp: Date.now() - 86400000 * 1.7 },
@@ -61,11 +61,11 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'f14', text: "Yes. The contrast between the rigid and the wild.", sender: 'them', timestamp: Date.now() - 86400000 * 1.2 },
     { id: 'f15', text: "image", sender: 'them', timestamp: Date.now() - 86400000 },
     { id: 'f16', text: "Like this study I did yesterday.", sender: 'them', timestamp: Date.now() - 86400000 * 0.9 },
-    { id: 'f17', text: "That is stunning. The vines look like they're moving.", sender: 'me', timestamp: Date.now() - 86400000 * 0.8 },
+    { id: 'f17', text: "That is stunning. The light on those shelves is incredible.", sender: 'me', timestamp: Date.now() - 86400000 * 0.8 },
     { id: 'f18', text: "I struggled with the shading. Maybe you can give me some tips.", sender: 'them', timestamp: Date.now() - 86400000 * 0.7 },
-    { id: 'f19', text: "Anytime. We could sketch together sometime.", sender: 'me', timestamp: Date.now() - 86400000 * 0.6 },
-    { id: 'f20', text: "I'd like that. I'm usually at the park on Sundays.", sender: 'them', timestamp: Date.now() - 86400000 * 0.5 },
-    { id: 'f21', text: "Sundays work for me. I'll bring the charcoal.", sender: 'me', timestamp: Date.now() - 86400000 * 0.4 }
+    { id: 'f19', text: "Focus on the negative space. It defines the form.", sender: 'me', timestamp: Date.now() - 86400000 * 0.6 },
+    { id: 'f20', text: "That's a great perspective. I'll try that on my next draft.", sender: 'them', timestamp: Date.now() - 86400000 * 0.5 },
+    { id: 'f21', text: "Let me know how it goes. I'd love to see the result.", sender: 'me', timestamp: Date.now() - 86400000 * 0.4 }
   ],
   'c2': [ // Aditya - Poet (Mood Resonance - UNREAD)
     { id: 'a1', text: "There is a quietness to your profile that is rare.", sender: 'them', timestamp: Date.now() - 86400000 * 3 },
@@ -84,10 +84,10 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'a14', text: "Do you share your work?", sender: 'me', timestamp: Date.now() - 86400000 * 1.2 },
     { id: 'a15', text: "Rarely. Only with those who listen.", sender: 'them', timestamp: Date.now() - 86400000 },
     { id: 'a16', text: "I'm a good listener.", sender: 'me', timestamp: Date.now() - 86400000 * 0.9 },
-    { id: 'a17', text: "I believe you are. I have a reading coming up.", sender: 'them', timestamp: Date.now() - 86400000 * 0.8 },
-    { id: 'a18', text: "I'd love to hear it.", sender: 'me', timestamp: Date.now() - 86400000 * 0.7 },
-    { id: 'a19', text: "It's small. Intimate. No microphones.", sender: 'them', timestamp: Date.now() - 86400000 * 0.6 },
-    { id: 'a20', text: "I'll send you the details. I think you'd appreciate the silence between the words.", sender: 'them', timestamp: Date.now() - 86400000 * 0.5 }
+    { id: 'a17', text: "I believe you are. I'm publishing a collection soon.", sender: 'them', timestamp: Date.now() - 86400000 * 0.8 },
+    { id: 'a18', text: "I'd love to read it.", sender: 'me', timestamp: Date.now() - 86400000 * 0.7 },
+    { id: 'a19', text: "It's going to be an ebook. Simple. No fanfare.", sender: 'them', timestamp: Date.now() - 86400000 * 0.6 },
+    { id: 'a20', text: "I'll send you the link. I think you'd appreciate the silence between the words.", sender: 'them', timestamp: Date.now() - 86400000 * 0.5 }
   ],
   'c3': [ // The Penthouse Suite - Group (Collaboration Invite - UNREAD)
     { id: 'g1', text: "Hey! We really liked your portfolio and wanted to reach out.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 1.1 },
@@ -95,17 +95,17 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'g3', text: "Yeah, just a group of us who share a studio downtown.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 1.06 },
     { id: 'g4', text: "We're trying to get more people involved. Mixing things up.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 1.05 },
     { id: 'g5', text: "That sounds fun. I've been looking for a workspace.", sender: 'me', timestamp: Date.now() - 604800000 * 1.04 },
-    { id: 'g6', text: "You should come by. It's nothing fancy, just good vibes.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 1.03 },
-    { id: 'g7', text: "I might take you up on that. What do you guys usually do?", sender: 'me', timestamp: Date.now() - 604800000 * 1.02 },
-    { id: 'g8', text: "Honestly? Mostly drink coffee and bounce ideas around.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 1.01 },
-    { id: 'g9', text: "Sounds like my kind of process.", sender: 'me', replyTo: { id: 'g8', text: "Honestly? Mostly drink coffee and bounce ideas around.", sender: 'them', author: 'Leo' }, timestamp: Date.now() - 604800000 * 0.99 },
-    { id: 'g10', text: "We have space if you ever want to work on something.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 0.98 },
-    { id: 'g11', text: "Yeah, plenty of room. Leo brings the snacks.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 0.97 },
-    { id: 'g12', text: "Sold on the snacks. Where is it?", sender: 'me', timestamp: Date.now() - 604800000 * 0.96 },
-    { id: 'g13', text: "Old warehouse on 4th. We're having a small get-together tonight.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 0.95 },
-    { id: 'g14', text: "Super casual. Just music and art.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 },
-    { id: 'g15', text: "I might stop by. What time?", sender: 'me', timestamp: Date.now() - 604800000 * 0.9 },
-    { id: 'g16', text: "Whenever. People start showing up around 8.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 0.8 },
+    { id: 'g6', text: "You should check out our online gallery. It's nothing fancy, just good vibes.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 1.03 },
+    { id: 'g7', text: "I might do that. What do you guys usually do?", sender: 'me', timestamp: Date.now() - 604800000 * 1.02 },
+    { id: 'g8', text: "Honestly? Mostly share drafts and bounce ideas around.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 1.01 },
+    { id: 'g9', text: "Sounds like my kind of process.", sender: 'me', replyTo: { id: 'g8', text: "Honestly? Mostly share drafts and bounce ideas around.", sender: 'them', author: 'Leo' }, timestamp: Date.now() - 604800000 * 0.99 },
+    { id: 'g10', text: "We have space if you ever want to showcase something.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 0.98 },
+    { id: 'g11', text: "Yeah, plenty of room. Leo brings the digital assets.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 0.97 },
+    { id: 'g12', text: "Sold on the assets. Where is it?", sender: 'me', timestamp: Date.now() - 604800000 * 0.96 },
+    { id: 'g13', text: "It's all on our cloud server. We're having a livestream tonight.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 0.95 },
+    { id: 'g14', text: "Super casual. Just music and art streams.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 },
+    { id: 'g15', text: "I might tune in. What time?", sender: 'me', timestamp: Date.now() - 604800000 * 0.9 },
+    { id: 'g16', text: "Whenever. Stream starts around 8.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 0.8 },
     { id: 'g17', text: "It's a good group. You'd fit right in.", sender: 'them', author: 'Kam', timestamp: Date.now() - 604800000 * 0.7 },
     { id: 'g18', text: "Thanks for the invite. Who else is going?", sender: 'me', timestamp: Date.now() - 604800000 * 0.6 },
     { id: 'g19', text: "A mix. Musicians, painters, designers. You'll see.", sender: 'them', author: 'Leo', timestamp: Date.now() - 604800000 * 0.5 }
@@ -169,8 +169,8 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'v15', text: "A bit of both. They have a new exhibit on sketches.", sender: 'them', timestamp: Date.now() - 604800000 * 0.8 },
     { id: 'v16', text: "I saw posters for that. Is it good?", sender: 'me', timestamp: Date.now() - 604800000 * 0.7 },
     { id: 'v17', text: "It's illuminating. You should see it.", sender: 'them', timestamp: Date.now() - 604800000 * 0.6 },
-    { id: 'v18', text: "Maybe I'll catch you there. I could use a tour guide.", sender: 'me', timestamp: Date.now() - 604800000 * 0.5 },
-    { id: 'v19', text: "I'm expensive. Coffee is my rate.", sender: 'them', timestamp: Date.now() - 604800000 * 0.4 },
-    { id: 'v20', text: "Sold. I'll buy.", sender: 'me', timestamp: Date.now() - 604800000 * 0.3 }
+    { id: 'v18', text: "Maybe I'll check it out online. I could use a virtual tour.", sender: 'me', timestamp: Date.now() - 604800000 * 0.5 },
+    { id: 'v19', text: "I'm expensive. Detailed feedback is my rate.", sender: 'them', timestamp: Date.now() - 604800000 * 0.4 },
+    { id: 'v20', text: "Sold. I'll take notes.", sender: 'me', timestamp: Date.now() - 604800000 * 0.3 }
   ]
 };
