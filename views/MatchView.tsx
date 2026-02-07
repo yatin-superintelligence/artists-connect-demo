@@ -11,7 +11,7 @@ const MatchView: React.FC<MatchViewProps> = ({ profile, onSendMessage, onMaybeLa
   const isChloe = profile.name === 'Chloe';
 
   return (
-    <div className="fixed inset-0 z-[200] bg-gradient-to-b from-[#1a237e] via-[#0a0118] to-[#0a0118] flex flex-col items-center justify-center p-8 animate-in fade-in duration-500 overflow-hidden">
+    <div className="fixed inset-0 z-[200] bg-gradient-to-b from-[#2E1065] via-[#0F172A] to-[#000000] flex flex-col items-center justify-center p-8 animate-in fade-in duration-500 overflow-hidden">
 
       {/* Special Full-Screen Hearts for Chloe Match */}
       {/* Special Full-Screen Twinkles for Chloe Match */}
@@ -49,38 +49,41 @@ const MatchView: React.FC<MatchViewProps> = ({ profile, onSendMessage, onMaybeLa
       )}
 
       {/* Profile Photo */}
-      <div className="relative mb-12 animate-in zoom-in-50 duration-700">
-        <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl relative z-10">
+      <div className="relative mb-12 animate-in zoom-in-50 duration-700 group">
+        <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white/20 shadow-[0_0_60px_rgba(139,92,246,0.5)] relative z-10 ring-4 ring-white/10 animate-pulse-slow">
           <img src={profile.images[0]} alt={profile.name} className="w-full h-full object-cover" />
         </div>
         {/* Glow behind photo */}
-        <div className="absolute inset-0 bg-indigo-500/20 blur-[80px] rounded-full -z-0"></div>
+        <div className="absolute inset-0 bg-indigo-500/40 blur-[250px] rounded-full -z-0 animate-pulse"></div>
       </div>
 
       {/* Text Content */}
       <div className="text-center space-y-4 mb-24 relative z-10">
         <div className="flex items-center justify-center gap-2 text-white/90 font-medium">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
           </svg>
-          <span className="text-[17px]">Feelings are mutual</span>
+          <span className="text-[17px]">You're Connected</span>
         </div>
         <h1 className="text-6xl font-black text-white tracking-tight animate-in slide-in-from-bottom-4 duration-500">
           {profile.name}
         </h1>
+        <p className="text-white/80 text-lg font-medium mt-3 animate-in fade-in slide-in-from-bottom-5 duration-700 delay-150">
+          A new artistic journey begins
+        </p>
       </div>
 
       {/* Action Buttons */}
       <div className="w-full max-w-xs space-y-6 flex flex-col items-center relative z-20">
         <button
           onClick={onSendMessage}
-          className="w-full bg-white text-[#0a0118] py-5 rounded-full font-black text-xl shadow-2xl transition-all active:scale-95 transform hover:-translate-y-1"
+          className="w-full bg-gradient-to-r from-[#3B0764] to-[#581C87] text-white py-5 rounded-full font-black text-xl shadow-lg shadow-purple-900/40 transition-all active:scale-95 transform hover:-translate-y-1 hover:shadow-purple-900/60"
         >
           Send message
         </button>
         <button
           onClick={onMaybeLater}
-          className="text-white font-bold text-lg hover:text-white/80 transition-opacity active:opacity-60"
+          className="text-white/60 font-bold text-lg hover:text-white transition-colors active:opacity-60"
         >
           Maybe later
         </button>
