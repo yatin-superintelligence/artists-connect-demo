@@ -25,6 +25,7 @@ import HelpCenterView from './views/HelpCenterView';
 
 
 import MatchView from './views/MatchView';
+import AcknowledgementView from './views/AcknowledgementView';
 import { Tab, Profile, Connection, ChatMessage } from './types';
 import { DISCOVER_PROFILES } from './data/profiles/discover/profiles';
 import { CHAT_CONNECTIONS } from './data/profiles/chat/connections';
@@ -34,6 +35,7 @@ import { INITIAL_CHAT_HISTORIES } from './data/chats/history';
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>(Tab.Discover);
   const [discoverActiveIndex, setDiscoverActiveIndex] = useState(0);
+  const [hasAcknowledged, setHasAcknowledged] = useState(false);
   const [showSplash, setShowSplash] = useState(true);
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [isCreatingChat, setIsCreatingChat] = useState(false);
@@ -166,7 +168,8 @@ const App: React.FC = () => {
   const [isBootPhase2Ready, setIsBootPhase2Ready] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
-  // Adaptive Boot Screen Logic - Use lazy initializer to avoid flash
+  // Adaptive Boot Screen Logic - Starts ONLY after acknowledgement
+  // Use lazy initializer to avoid flash
   const [bootStyles, setBootStyles] = useState(() => {
     // 1. Check local storage first
     if (typeof window !== 'undefined') {
@@ -197,7 +200,7 @@ const App: React.FC = () => {
   useEffect(() => {
     // Check at 1s - if ready, proceed immediately
     const checkTimer = setTimeout(() => {
-      if (isBootVideoReady) {
+      if (isBootVideoReady && hasAcknowledged) {
         setIsBootPhase1(false);
         setIsBootPhase2Ready(true);
       }
@@ -205,7 +208,7 @@ const App: React.FC = () => {
 
     // Force proceed at 2s - if still not ready, just move on (Phase 2 has logic to handle missing video)
     const forceTimer = setTimeout(() => {
-      if (isBootPhase1) { // Only if still stuck in Phase 1
+      if (isBootPhase1 && hasAcknowledged) { // Only if still stuck in Phase 1 AND acknowledged
         setIsBootPhase1(false);
         setIsBootPhase2Ready(true);
       }
@@ -215,18 +218,18 @@ const App: React.FC = () => {
       clearTimeout(checkTimer);
       clearTimeout(forceTimer);
     };
-  }, [isBootVideoReady, isBootPhase1]);
+  }, [isBootVideoReady, isBootPhase1, hasAcknowledged]);
 
   // If video loads after 2s timer, immediately start phase 2
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (isBootVideoReady && isBootPhase1) {
+      if (isBootVideoReady && isBootPhase1 && hasAcknowledged) {
         setIsBootPhase1(false);
         setIsBootPhase2Ready(true);
       }
     }, 1000);
     return () => clearTimeout(timer);
-  }, [isBootVideoReady, isBootPhase1]);
+  }, [isBootVideoReady, isBootPhase1, hasAcknowledged]);
 
   // Phase 2: Play video once phase 1 is done - with adaptive timing
   // If video loads within first 3 seconds of phase 2, show video for full 6s boot
@@ -661,6 +664,10 @@ const App: React.FC = () => {
   );
 
   const activeChat = connections.find(c => c.id === activeChatId);
+
+  if (!hasAcknowledged) {
+    return <AcknowledgementView onAcknowledge={() => setHasAcknowledged(true)} />;
+  }
 
   return (
     <ThemeProvider>
