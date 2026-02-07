@@ -37,6 +37,7 @@ interface IndividualChatViewProps {
   onEndCall?: () => void;
   onOpenLastSeen?: () => void;
 
+  userImage: string;
   distanceUnit?: 'km' | 'miles';
 }
 
@@ -69,7 +70,8 @@ const IndividualChatView: React.FC<IndividualChatViewProps> = ({
   onEndCall,
   onOpenLastSeen,
 
-  distanceUnit = 'km'
+  distanceUnit = 'km',
+  userImage
 }) => {
   const { currentTheme } = useTheme();
   const isLightTheme = currentTheme.name === 'Classic Artist Circle Light';
@@ -85,7 +87,7 @@ const IndividualChatView: React.FC<IndividualChatViewProps> = ({
   const [showProfile, setShowProfile] = useState(false);
   const [selectedMember, setSelectedMember] = useState<Profile | null>(null);
   const [isMuted, setIsMuted] = useState(false);
-  const [blurExplicit, setBlurExplicit] = useState(true);
+
 
   const [isEditingGroup, setIsEditingGroup] = useState(false);
   const [groupBio, setGroupBio] = useState(connection.profile.bio);
@@ -978,12 +980,7 @@ const IndividualChatView: React.FC<IndividualChatViewProps> = ({
                               <div className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform ${isMuted ? 'translate-x-6' : 'translate-x-0'} `} />
                             </div>
                           </div>
-                          <div className={`p-6 flex items-center justify-between cursor-pointer ${isLightTheme ? 'hover:bg-[var(--bg-tertiary)] active:bg-[var(--bg-tertiary)]' : (isColoredTheme ? 'hover:bg-white/10 active:bg-white/10' : 'hover:bg-white/5 active:bg-white/5')} transition-colors`} onClick={() => setBlurExplicit(!blurExplicit)}>
-                            <span className={`${isLightTheme ? 'text-[var(--text-primary)]' : 'text-white'} text-[15px] font-bold`}>Blur sensitive images</span>
-                            <div className={`w-14 h-8 rounded-full relative transition-colors ${blurExplicit ? (currentTheme.name === 'That Orange' ? 'bg-orange-600' : currentTheme.name === 'Hot Pink' ? 'bg-pink-600' : currentTheme.name === 'More Brown' ? 'bg-amber-700' : isLightTheme ? 'bg-black' : 'bg-indigo-600') : (isLightTheme ? 'bg-[var(--bg-tertiary)]' : 'bg-white/10')} `}>
-                              <div className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform ${blurExplicit ? 'translate-x-6' : 'translate-x-0'} `} />
-                            </div>
-                          </div>
+
                           <button className={`w-full text-left p-6 text-[#f43f5e] font-bold text-[15px] ${isLightTheme ? 'hover:bg-[var(--bg-tertiary)] active:bg-[var(--bg-tertiary)]' : (isColoredTheme ? 'hover:bg-white/10 active:bg-white/10' : 'hover:bg-white/5 active:bg-white/5')} transition-colors`}>
                             Leave
                           </button>
@@ -1078,12 +1075,7 @@ const IndividualChatView: React.FC<IndividualChatViewProps> = ({
                         <div className={`absolute top-1 left-1 w-5 h-5 bg-white rounded-full transition-transform ${isMuted ? 'translate-x-5' : 'translate-x-0'}`} />
                       </div>
                     </div>
-                    <div onClick={() => setBlurExplicit(!blurExplicit)} className="flex items-center justify-between p-5 cursor-pointer active:bg-[var(--text-primary)]/5 transition-colors">
-                      <span className="text-base font-bold text-[var(--text-primary)]">Blur Sensitive Images</span>
-                      <div className={`w-12 h-7 rounded-full relative transition-colors ${blurExplicit ? (currentTheme.name === 'That Orange' ? 'bg-orange-600' : currentTheme.name === 'Hot Pink' ? 'bg-pink-600' : currentTheme.name === 'More Brown' ? 'bg-amber-700' : isLightTheme ? 'bg-black' : 'bg-indigo-600') : 'bg-[var(--text-primary)]/10'}`}>
-                        <div className={`absolute top-1 left-1 w-5 h-5 bg-white rounded-full transition-transform ${blurExplicit ? 'translate-x-5' : 'translate-x-0'}`} />
-                      </div>
-                    </div>
+
                   </div>
                 </div>
 
@@ -1144,7 +1136,7 @@ const IndividualChatView: React.FC<IndividualChatViewProps> = ({
           activeCallType === 'video' && activeGlobalCall && (
             <VideoCallView
               profile={connection.profile}
-              userImage="https://images.pexels.com/photos/745767/pexels-photo-745767.jpeg?auto=compress&cs=tinysrgb&w=800"
+              userImage={userImage}
               onEndCall={handleEndCall}
               onMinimize={(duration, isMuted, isSpeaker, isVideoOff) => {
                 if (onMinimizeCall) {

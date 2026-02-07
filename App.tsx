@@ -756,6 +756,7 @@ const App: React.FC = () => {
               }
             }}
             onEndCall={() => setActiveGlobalCall(null)}
+            userImage={myProfile.images[0]}
             distanceUnit={distanceUnit}
           />
         )}
