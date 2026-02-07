@@ -12,7 +12,7 @@ const AcknowledgementView: React.FC<AcknowledgementViewProps> = ({ onAcknowledge
                 {/* Header */}
                 <div className="text-center mb-8">
                     <h1 className="text-3xl md:text-4xl font-black bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                        Artists Connect
+                        Artists Connect by Yatin Taneja
                     </h1>
                     <div className="inline-block px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-200 text-xs font-bold tracking-wider uppercase">
                         Prototype Demo
