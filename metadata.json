@@ -1,0 +1,7 @@
+{
+  "name": "Artist Circle Prototype",
+  "description": "A high-fidelity replica of the Artist Circle dating app, featuring discovery, likes, chat, and profile management with a sleek dark aesthetic.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

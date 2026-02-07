@@ -1,0 +1,337 @@
+VISUAL ARTS (2D & 3D)
+---------------------
+- Painter (oil)
+- Painter (acrylic)
+- Painter (watercolor)
+- Digital artist
+- Illustrator
+- Graphic designer
+- Sketch artist
+- Draughtsman
+- Sculptor
+- Ceramicist
+- Potter
+- Printmaker
+- Collage artist
+- Mixed-media artist
+- Street artist
+- Muralist
+- Tattoo artist
+- Calligrapher
+- Pixel artist
+- Voxel artist
+- Mosaic artist
+- Stained glass artist
+- Land artist
+- Environmental artist
+- Installation artist
+- Light artist
+- Projection artist
+- Kinetic sculptor
+
+
+MUSIC & AUDIO
+-------------
+- Singer
+- Vocalist
+- Rapper
+- MC
+- Music composer
+- Songwriter
+- Guitarist
+- Pianist
+- Drummer
+- Violinist
+- Bassist
+- Saxophonist
+- Flutist
+- Trumpeter
+- Cellist
+- Harpist
+- Percussionist
+- Instrumentalist (other)
+- Music producer
+- Beatmaker
+- DJ
+- Sound engineer
+- Audio designer
+- Foley artist
+- Binaural audio designer
+- Spatial audio designer
+- Podcast producer
+- Audio storyteller
+- Music visualizer
+- Conductor
+- Lyricist
+- ASMR artist
+- Sound sculptor
+
+
+PERFORMING ARTS
+---------------
+- Actor
+- Actress
+- Theatre performer
+- Stage actor
+- Dancer (ballet)
+- Dancer (contemporary)
+- Dancer (hip-hop)
+- Dancer (jazz)
+- Dancer (classical)
+- Dancer (ballroom)
+- Choreographer
+- Theatre director
+- Stage director
+- Voice actor
+- Comedian
+- Stand-up comedian
+- Improvisational comedian
+- Circus performer
+- Acrobat
+- Aerialist
+- Spoken word artist
+- Slam poet (performance)
+- Mime artist
+- Physical theatre performer
+- Drag artist
+- Drag queen
+- Drag king
+- Cosplayer
+- Puppeteer
+- Marionette artist
+- Magician
+- Illusionist
+- Busker
+- Street performer
+
+
+WRITING & LITERARY ARTS
+------------------------
+- Novelist
+- Fiction writer
+- Short story writer
+- Poet
+- Playwright
+- Screenwriter
+- Scriptwriter
+- Comic book writer
+- Graphic novelist
+- Copywriter
+- Creative writer
+- Blogger
+- Essayist
+- Critic
+- Literary critic
+- Reviewer
+- Memoir writer
+- Biographer
+- Zine maker
+- Indie publisher
+- Podcast scriptwriter
+- Game narrative designer
+- Dialogue writer
+- Ghostwriter
+
+
+FILM, VIDEO & ANIMATION
+------------------------
+- Filmmaker
+- Film director
+- Short film creator
+- Documentary filmmaker
+- Cinematographer
+- Director of photography
+- Video artist
+- Animator (2D)
+- Animator (3D)
+- Stop-motion animator
+- Claymation artist
+- Motion graphics artist
+- Video editor
+- Film editor
+- Colorist
+- VFX artist
+- Visual effects artist
+- Storyboard artist
+- Title sequence designer
+- Camera operator
+- Steadicam operator
+
+
+PHOTOGRAPHY
+-----------
+- Photographer
+- Portrait photographer
+- Fashion photographer
+- Street photographer
+- Documentary photographer
+- Photojournalist
+- Landscape photographer
+- Nature photographer
+- Wildlife photographer
+- Commercial photographer
+- Product photographer
+- Food photographer
+- Event photographer
+- Wedding photographer
+- Conceptual photographer
+- Fine art photographer
+- Architectural photographer
+- Sports photographer
+- Astrophotographer
+- Macro photographer
+- Photo editor
+- Photo retoucher
+
+
+DESIGN & APPLIED ARTS
+----------------------
+- Graphic designer
+- Brand designer
+- Editorial designer
+- UX designer
+- UI designer
+- Product designer
+- Industrial designer
+- Game designer
+- Level designer
+- Concept artist (games)
+- Concept artist (film)
+- Character designer
+- Environment designer
+- Fashion designer
+- Costume designer
+- Textile designer
+- Textile artist
+- Jewelry designer
+- Interior designer
+- Spatial designer
+- Furniture designer
+- Packaging designer
+- Type designer
+- Font creator
+- Icon designer
+- Motion designer
+- AR filter creator
+- Experience designer
+- Service designer
+
+
+DIGITAL & NEW MEDIA
+--------------------
+- Digital artist
+- 3D artist
+- CGI artist
+- AI artist
+- Generative artist
+- Prompt engineer (creative)
+- NFT artist
+- Crypto artist
+- AR artist
+- Augmented reality artist
+- VR artist
+- Virtual reality artist
+- Immersive experience designer
+- Creative technologist
+- Creative coder
+- Algorithmic artist
+- Generative coder
+- Data visualization artist
+- GIF artist
+- Meme creator
+- Holography artist
+- Projection mapping artist
+- Interactive media artist
+- Web designer
+- Digital installation artist
+
+
+CRAFT & SPECIALIZED ARTS
+-------------------------
+- Woodworker
+- Furniture maker
+- Carpenter (artistic)
+- Leatherworker
+- Leather artist
+- Glassblower
+- Glass artist
+- Blacksmith
+- Metalworker
+- Metal sculptor
+- Silversmith
+- Goldsmith
+- Ceramicist
+- Potter
+- Bookbinder
+- Paper artist
+- Origami artist
+- Papercut artist
+- Model maker
+- Miniature artist
+- Diorama maker
+- Luthier
+- Instrument maker
+- Cake decorator
+- Pastry artist
+- Sugar artist
+- Chocolatier (artistic)
+- Makeup artist
+- Body painter
+- Special effects makeup artist
+- Prosthetic makeup artist
+- Hairstylist (creative)
+- Florist (artistic)
+- Floral designer
+- Weaver
+- Fiber artist
+- Quilter
+- Embroiderer
+- Textile sculptor
+
+
+CONTENT & SOCIAL CREATORS
+--------------------------
+- Content creator
+- YouTuber
+- Video creator
+- TikTok creator
+- Reels creator
+- Short-form content creator
+- Vlogger
+- Video essayist
+- Streamer
+- Live streamer
+- Gaming content creator
+- Educational content creator
+- Tutorial creator
+- Influencer (art/creative)
+- Podcast host
+- Social media artist
+
+
+EXPERIMENTAL & HYBRID ARTS
+---------------------------
+- Bio-artist
+- Living art creator
+- Interactive installation artist
+- Sound sculptor
+- Noise artist
+- Mixed reality artist
+- Transmedia storyteller
+- Cross-media artist
+- Performance + tech artist
+- Interdisciplinary artist
+- Conceptual artist
+- Process artist
+- Relational artist
+- Social practice artist
+- Public art artist
+- Community artist
+- Site-specific artist
+- Time-based media artist
+- New media artist
+- Experimental filmmaker
+- Video performance artist
+- Sound installation artist
+- Sensory artist
+- Multisensory experience designer
