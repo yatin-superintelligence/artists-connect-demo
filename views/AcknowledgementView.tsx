@@ -38,7 +38,9 @@ const AcknowledgementView: React.FC<AcknowledgementViewProps> = ({ onAcknowledge
                                 <strong className="text-white">Technology Stack:</strong> Built using modern web technologies including <span className="text-indigo-300">React</span>, <span className="text-indigo-300">TypeScript</span>, and <span className="text-indigo-300">Tailwind CSS</span>. It is optimized for performance and responsiveness across all devices (Mobile, Tablet, Desktop).
                             </li>
 
-                            <strong className="text-white">Feature Demonstration:</strong> Explore a simulated social ecosystem designed to showcase key interactions including <span className="text-indigo-300">Discovery & Swiping</span>, <span className="text-indigo-300">Portfolio Display</span>, <span className="text-indigo-300">Advanced Filtering</span>, <span className="text-indigo-300">Interactive Chat</span>, and <span className="text-indigo-300">Profile Management</span>.
+                            <li>
+                                <strong className="text-white">Feature Demonstration:</strong> Explore a simulated social ecosystem designed to showcase key interactions including <span className="text-indigo-300">Discovery & Swiping</span>, <span className="text-indigo-300">Portfolio Display</span>, <span className="text-indigo-300">Advanced Filtering</span>, <span className="text-indigo-300">Interactive Chat</span>, and <span className="text-indigo-300">Profile Management</span>.
+                            </li>
 
                             <li>
                                 <strong className="text-white">Simulated Environment:</strong> All profiles, chats, and interactions within this app are <strong>mock data</strong>. No real user accounts are created, and no personal information is stored or transmitted.
@@ -62,7 +64,7 @@ const AcknowledgementView: React.FC<AcknowledgementViewProps> = ({ onAcknowledge
                     <div className="flex flex-col items-center gap-4">
                         <button
                             onClick={onAcknowledge}
-                            className="group relative w-full md:w-auto px-12 py-4 bg-[#4c1d95] rounded-full font-bold text-lg shadow-lg shadow-indigo-500/30 transition-all hover:scale-105 active:scale-95 hover:shadow-indigo-500/50"
+                            className="group relative w-full md:w-auto px-6 md:px-12 py-4 bg-[#4c1d95] rounded-full font-bold text-base md:text-lg whitespace-nowrap shadow-lg shadow-indigo-500/30 transition-all hover:scale-105 active:scale-95 hover:shadow-indigo-500/50"
                         >
                             <span className="relative z-10">Acknowledge & Enter App</span>
                             <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
