@@ -65,7 +65,7 @@ export const INITIAL_CHAT_HISTORIES: Record<string, ChatMessage[]> = {
     { id: 'f18', text: "I struggled with the shading. Maybe you can give me some tips.", sender: 'them', timestamp: Date.now() - 86400000 * 0.7 },
     { id: 'f19', text: "Focus on the negative space. It defines the form.", sender: 'me', timestamp: Date.now() - 86400000 * 0.6 },
     { id: 'f20', text: "That's a great perspective. I'll try that on my next draft.", sender: 'them', timestamp: Date.now() - 86400000 * 0.5 },
-    { id: 'f21', text: "Let me know how it goes. I'd love to see the result.", sender: 'me', timestamp: Date.now() - 86400000 * 0.4 }
+    { id: 'f21', text: "Keep me posted. I'd love to see the result.", sender: 'me', timestamp: Date.now() - 86400000 * 0.4 }
   ],
   'c2': [ // Aditya - Poet (Mood Resonance - UNREAD)
     { id: 'a1', text: "There is a quietness to your profile that is rare.", sender: 'them', timestamp: Date.now() - 86400000 * 3 },

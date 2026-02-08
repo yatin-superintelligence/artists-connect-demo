@@ -128,7 +128,7 @@ const App: React.FC = () => {
     profileType: 'Artist',
 
     distance: '0 km away',
-    bio: 'I see the world in brushstrokes and pixels. As a painter and digital artist, I\'m obsessed with capturing the fleeting moments that others might miss—the way light hits a messy studio floor, or the glitchy beauty of a corrupted file.\n\nMy hands are usually covered in paint, even when I\'m working on my iPad. I believe art isn\'t just what you create, but how you live. Looking for someone who isn\'t afraid to get their hands dirty or debate the merits of brutalism over coffee.\n\nLet\'s make something beautiful, or at least something honest.',
+    bio: 'I see the world in brushstrokes and pixels. As a painter and digital artist, I\'m obsessed with capturing the fleeting moments that others might miss—the way light hits a messy studio floor, or the glitchy beauty of a corrupted file.\n\nMy hands are usually covered in paint, even when I\'m working on my iPad. I believe art isn\'t just what you create, but how you live. I value those who aren\'t afraid to dive deep into the creative process or debate the merits of brutalism over coffee.\n\nMaking something beautiful, or at least something honest, is the goal.',
     images: [
       'https://images.pexels.com/photos/4442088/pexels-photo-4442088.jpeg?auto=compress&cs=tinysrgb&w=800',
       'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=800',
