@@ -132,7 +132,7 @@ const ProfileView: React.FC<ProfileViewProps> = ({
         {/* Left Column (Desktop) */}
         <div className="md:w-1/3 md:sticky md:top-24 md:flex md:justify-center">
           <div className="px-1.5 mb-6 md:px-0">
-            <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden shadow-2xl md:aspect-[3/4] max-w-lg mx-auto md:max-w-none md:mx-0">
+            <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden shadow-2xl md:aspect-[4/3] max-w-lg mx-auto md:max-w-none md:mx-0">
               <img src={profile.images[0]} className="w-full h-full object-cover" alt="Me" />
 
               {/* Preview Button Overlay */}
